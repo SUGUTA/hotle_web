@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
+    <title>Contact Us</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            background: #f4f4f4;
+        }
+        form {
+            padding: 10px;
+            background-color: darkgray;
+            max-width: 600px;
+            margin: auto;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav id="navbar">
+        <div class="container">
+            <h1 class="logo"><a href="index.html">KABARAK HOTEL</a></h1>
+                <ul>
+                    <li><a  href="index.html">Home</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="menu.html">Our Meals</a></li>
+                    <li><a class="current" href="contact.html">Contact Us</a></li>
+                </ul>
+              </div>
+            </nav>  
+    </header>
+
+     <section id="contact-form" class="py-3">
+         <div class="container">
+            <h1 style="align-content: center" align="center" class="l-heading"><span class="text-primary">Contact </span> Us</h1>
+            <p style="align-content: center" align="center">Please fill in all spots so you can contact us</p>
+             <form action="process.php">
+                 <div class="form-group">
+                     <label for="name">Name</label>
+                     <input type="text" name="Name" id="Name">
+                 </div>
+                 <div class="form-group">
+                     <label for="email">Email</label>
+                     <input type="email" name="email" id="email">
+                 </div>
+                 <div class="form-group">
+                     <label for="message">Message</label>
+                     <textarea name="message" id="message"></textarea>
+                 </div>
+                 <div class="form-group">
+                     <label for="rating">Rating:</label><br>
+                     <input type="radio" id="rating5" name="rating" value="5">
+                     <label for="rating5">5</label>
+                     <input type="radio" id="rating4" name="rating" value="4">
+                     <label for="rating4">4</label>
+                     <input type="radio" id="rating3" name="rating" value="3">
+                     <label for="rating3">3</label>
+                     <input type="radio" id="rating2" name="rating" value="2">
+                     <label for="rating2">2</label>
+                     <input type="radio" id="rating1" name="rating" value="1">
+                     <label for="rating1">1</label>
+                 </div>
+                 <div class="form-group">
+                     <label for="interests">Interests:</label><br>
+                     <input type="checkbox" id="interest1" name="interests" value="Sightseeing">
+                     <label for="interest1">Sightseeing</label>
+                     <input type="checkbox" id="interest2" name="interests" value="Spa">
+                     <label for="interest2">Spa</label>
+                     <input type="checkbox" id="interest3" name="interests" value="Fitness">
+                     <label for="interest3">Fitness</label>
+                     <input type="checkbox" id="interest4" name="interests" value="Dining">
+                     <label for="interest4">Dining</label>
+                 </div>
+                 <button type="submit" class="btn">Submit</button>
+             </form>
+         </div>
+     </section>
+         <div class="container">
+            <div class="box ">
+                <i class="fas fa-hotel fa-3x"></i>
+                   <h3> Location</h3>
+                   <p>Nakuru- Eldama Ravine Road, Opposite Kabarak University main gate.</p>
+               </div>
+               <div class="box">
+                <i class="fas fa-phone fa-3x"></i>
+                <h3>Telephone Number</h3>
+                <p>+254112668826</p>
+               </div>
+               <div class="box ">
+                <i class="fas fa-envelope fa-3x"></i>
+                <h3>Email Address</h3>
+                <p>isaiahsuguta@gmail</p>
+               </div>
+         </div>
+
+    <footer id="contact-info" class="bg-dark" style="align-content: center" align="center">
+        <div class="downfooter">
+            <p>Copyright © </p>
+        </div>
+    </footer>
+</body>
+</html>
